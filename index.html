@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tá Pago — Controle de contas por ciclo</title>
+    <meta
+      name="description"
+      content="Aplicativo de controle de contas para Android. Seu mês começa no dia que você recebe. Pagou pela metade? O saldo vai sozinho pro próximo ciclo. Tudo no seu aparelho, sem cadastro."
+    />
+    <link rel="icon" href="icone.png" />
+
+    <meta property="og:title" content="Tá Pago — Suas contas em dia" />
+    <meta
+      property="og:description"
+      content="Controle de contas por ciclo, com pagamento parcial que rola sozinho pro mês seguinte."
+    />
+    <meta property="og:image" content="destaque.png" />
+
+    <style>
+      :root {
+        --verde: #0e9f6e;
+        --verde-escuro: #057a55;
+        --verde-claro: #e3f5ee;
+        --texto: #111827;
+        --apoio: #6b7280;
+        --fundo: #f8faf9;
+        --borda: #e5e9e8;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        background: var(--fundo);
+        color: var(--texto);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .container {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+
+      header {
+        background: var(--verde);
+        color: #fff;
+        padding: 60px 0 64px;
+        text-align: center;
+      }
+
+      header img {
+        width: 92px;
+        height: 92px;
+        border-radius: 22px;
+        margin-bottom: 22px;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+
+      .tagline {
+        font-size: 19px;
+        opacity: 0.92;
+        margin-top: 6px;
+      }
+
+      .frase {
+        font-size: 16px;
+        opacity: 0.8;
+        margin-top: 16px;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      main {
+        padding: 48px 0 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        margin-bottom: 18px;
+      }
+
+      section {
+        margin-bottom: 44px;
+      }
+
+      .recursos {
+        display: grid;
+        gap: 14px;
+      }
+
+      .recurso {
+        background: #fff;
+        border: 1px solid var(--borda);
+        border-radius: 14px;
+        padding: 18px 20px;
+      }
+
+      .recurso h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .recurso p {
+        font-size: 15px;
+        color: var(--apoio);
+      }
+
+      .privacidade {
+        background: var(--verde-claro);
+        border-radius: 14px;
+        padding: 22px 24px;
+      }
+
+      .privacidade h2 {
+        color: var(--verde-escuro);
+      }
+
+      .privacidade p {
+        font-size: 15px;
+        color: var(--verde-escuro);
+      }
+
+      .privacidade a {
+        color: var(--verde-escuro);
+        font-weight: 700;
+      }
+
+      footer {
+        border-top: 1px solid var(--borda);
+        padding: 28px 0 48px;
+        font-size: 14px;
+        color: var(--apoio);
+        text-align: center;
+      }
+
+      footer a {
+        color: var(--verde-escuro);
+        font-weight: 600;
+      }
+
+      @media (max-width: 520px) {
+        header {
+          padding: 44px 0 48px;
+        }
+        h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img src="icone.png" alt="Ícone do aplicativo Tá Pago" />
+        <h1>Tá Pago</h1>
+        <p class="tagline">Suas contas em dia</p>
+        <p class="frase">
+          Controle de contas para Android. Seu mês começa no dia que você recebe —
+          não no dia 1º.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>O que ele faz diferente</h2>
+
+        <div class="recursos">
+          <div class="recurso">
+            <h3>Seu mês, do seu jeito</h3>
+            <p>
+              Você informa o dia em que recebe e o app monta o ciclo a partir daí.
+              Recebe dia 5? Seu mês vai de 5 de agosto a 4 de setembro. Quem também
+              recebe vale tem o ciclo dividido no dia do adiantamento.
+            </p>
+          </div>
+
+          <div class="recurso">
+            <h3>Pagou só uma parte?</h3>
+            <p>
+              Informe quanto conseguiu pagar. O app quita esse valor e cria sozinho
+              uma conta com o saldo restante no ciclo seguinte. Você não precisa
+              lançar nada à mão nem ficar com a conta pendurada.
+            </p>
+          </div>
+
+          <div class="recurso">
+            <h3>Fixas, variáveis, parceladas e investimentos</h3>
+            <p>
+              Copie as contas fixas do ciclo anterior com um toque. Compras
+              parceladas viram uma conta por mês automaticamente. E o que você
+              investe fica contado separado do que você gastou.
+            </p>
+          </div>
+
+          <div class="recurso">
+            <h3>Sem cadastro, sem internet</h3>
+            <p>
+              Não pedimos e-mail, telefone nem senha. O aplicativo funciona
+              offline e tudo fica gravado apenas no seu aparelho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacidade">
+        <h2>Privacidade</h2>
+        <p>
+          O Tá Pago não coleta, não transmite e não armazena nenhum dado fora do seu
+          aparelho. Não temos servidor e não temos como ver o que você lança.
+          <br /><br />
+          <a href="privacidade.html">Leia a política de privacidade completa</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>
+        Dúvidas ou sugestões:
+        <a href="mailto:guimaximo1321@gmail.com">guimaximo1321@gmail.com</a>
+      </p>
+      <p style="margin-top: 8px">Tá Pago · aplicativo para Android</p>
+    </footer>
+  </body>
+</html>
